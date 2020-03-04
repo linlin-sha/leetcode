@@ -1,0 +1,14 @@
+"""
+input type: list
+rtype:list[int]
+"""
+nums = [1,1,2,1]
+duplicate = []
+for item in nums:
+    if nums.count(item) > 1 and item not in duplicate:
+        duplicate.append(item)
+        nums.remove(item)
+    if nums.count(item) ==1 and item not in duplicate:
+        duplicate.append(item)
+                
+print(duplicate)
