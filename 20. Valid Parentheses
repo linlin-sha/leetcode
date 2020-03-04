@@ -1,0 +1,23 @@
+"""
+Initial value
+"""
+d = ["(",")","[","]","{","}"]
+l = []
+"""
+input string:s
+"""
+s = "()[{"
+
+for i in range(len(s)):
+    if s[i] in d:
+        l.append(d.index(s[i]))
+print(len(l))
+if len(l) % 2 == 1:
+    print("false")
+else:
+    if ((0 in l and 1 not in l) or (2 in l and 3 not in l) or (4 in l and 5 not in l)):
+        print("false")
+    else:
+        print("true")
+
+
