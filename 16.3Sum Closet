@@ -2,7 +2,7 @@
 input type:List
 rtype: list[index]
 
-Aim: Find three sum equal to 0
+Aim: Find three sum closet to target
 """
 
 nums = [-1,2,1,-4,1]
