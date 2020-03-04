@@ -1,0 +1,16 @@
+s = "pwwkew"
+c = []
+for i in range(len(s)):
+    a = s[i]
+    for j in range(i+1,len(s)):
+        b = s[j]
+        if b not in a:
+            a += b
+        else:
+            break
+    c.append(len(a))
+max_val = 0
+for n in c:
+    if n > max_val:
+        max_val = n
+print(max_val)
