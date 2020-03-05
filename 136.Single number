@@ -1,0 +1,15 @@
+Solution1:(apply collections package)
+
+import collections
+fre = collections.Counter(nums)
+for key, value in fre:
+  if value == 1:
+    return key
+ 
+ Solution2:(Not apply package)
+ nums = [1,1,3]
+ for item in nums:
+    if nums.count(item) == 1:
+        print(item)
+ 
+ 
